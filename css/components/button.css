@@ -1,0 +1,18 @@
+@import url('../styles.css');
+
+button {
+  background: var(--fundo);
+  color: var(--preto);
+  box-shadow: -5px 5px var(--roxo);
+  border: 0.3em solid var(--preto);
+  padding: 10px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: translateX(5px) translateY(-5px);
+  box-shadow: -15px 15px var(--roxo-escuro);
+}
