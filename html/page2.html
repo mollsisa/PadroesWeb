@@ -5,9 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
       <link rel="icon" href="../assets/icons/icon.png" type="image/png" />
-  <link rel="stylesheet" href="../css/pages/firstPage.css" />
+  <link rel="stylesheet" href="../css/pages/secondPage.css" />
 </head>
-<body>
-    teste de redirect
+<header>
+    <h1>simulação de um site com baixa usabilidade</h1>
+    <p>Tente preencher e enviar o formulário abaixo. Parece simples... ou não?</p>
+  </header>
+
+  <main class="moldura">
+    <section class="instrucoes-topo">
+      <button id="btnDicas" aria-label="Dicas">Dicas</button>
+    </section>
+
+    <aside id="dicas">
+      <h2>Dicas</h2>
+      <ul id="listaDicas"></ul>
+    </aside>
+
+    <section class="tela-simulada">
+      <h2>Formulário misterioso</h2>
+      <form>
+  
+        <input type="text" id="nome" placeholder="Escreva algo...">
+
+        <input type="email" id="email" placeholder="Talvez seu email?">
+        
+        <input id="mensagem" placeholder="O que você quer dizer?" rows="4">
+        
+        <div class="container-botoes">
+          <button type="button" id="editar" class="botao-estranho" title="Editar">
+            🤡
+          </button>
+
+          <button type="button" id="salvar" class="botao-estranho" title="Salvar">
+            🙃
+          </button>
+
+          <button type="submit" id="enviar" class="botao-estranho" title="Enviar">
+            😵‍💫
+          </button>
+        </div>
+
+      </form>
+    </section>
+  </main>
+  <script src="../js/pages/secondPage.js"></script>  
 </body>
 </html>
