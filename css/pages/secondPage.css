@@ -67,6 +67,19 @@ input {
   cursor: grabbing;
 }
 
+/* Todos os inputs habilitados vão parecer desabilitados */
+input:enabled {
+  background-color: #e0e0e0;
+  color: var(--cinza);
+  border: 1px solid #ccc;
+  cursor: not-allowed;
+}
+
+/* Todos os inputs desabilitados vão parecer habilitados */
+input:disabled {
+  background-color: var(--fundo);
+}
+
 .instrucoes-topo {
   position: absolute;
   top: 20px;
