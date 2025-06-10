@@ -131,7 +131,7 @@ botaoAcertei.addEventListener('dblclick', () =>{
   botaoAcertei.textContent = hoje.getFullYear;
  }
 });
-
+//oi
 let contador = 0;
 
 btn.addEventListener('click', () => {
