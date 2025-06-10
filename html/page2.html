@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="icon" href="../assets/icons/icon.png" type="image/png" >
-    <link rel="stylesheet" href="../css/pages/secondPage.css" >
+      <link rel="icon" href="../assets/icons/icon.png" type="image/png">
+      <link rel="stylesheet" href="../css/pages/secondPage.css">
 </head>
 <header>
     <h1>simulação de um site com baixa usabilidade</h1>
@@ -32,17 +32,23 @@
         
         <input id="mensagem" placeholder="O que você quer dizer?" rows="4">
         
+        <div class="container-data">
+          <button type="button" id="seletor-dia" class="botao-data">Dia</button>
+          <button type="button" id="seletor-mes" class="botao-data">Mês</button>
+          <button type="button" id="seletor-ano" class="botao-data">Ano</button>
+        </div>
+
         <div class="container-botoes">
-          <button type="button" id="editar" class="botao-estranho" title="Editar">
+          <button type="submit" id="enviar" class="botao-estranho" title="Acertei">
+            🎯
+          </button>
+
+          <button type="button" id="editar" class="botao-estranho" title="Errei">
             🤡
           </button>
 
           <button type="button" id="salvar" class="botao-estranho" title="Salvar">
             🙃
-          </button>
-
-          <button type="submit" id="enviar" class="botao-estranho" title="Enviar">
-            😵‍💫
           </button>
         </div>
       </form>
