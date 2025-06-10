@@ -165,11 +165,11 @@ inputs.forEach(input => {
 
     // Função para navegar para a página anterior (página 1)
     btnVoltar.addEventListener('click', () =>{
-        window.location.href = 'index.html';
+      redirectToPage('index.html'); 
     });
     // Função para navegar para a próxima página (página 3)
     btnProximo.addEventListener('click', function() {
-        window.location.href = 'page3.html';
+      redirectToPage('page3.html'); 
     });
 
     // Opcional: desabilitar botões se não houver página anterior/próxima
