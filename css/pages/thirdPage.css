@@ -1,0 +1,109 @@
+@import url('../styles.css');
+
+:root {
+  --fundo: #ffffff;
+  --preto: #111111;
+  --cinza: #666666;
+  --roxo: #7e3af2;
+  --sombra: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  background: var(--fundo);
+  color: var(--preto);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+header {
+  margin-top: 40px;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+main.moldura {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 140px 100px 80px;
+  box-sizing: border-box;
+  background: #f0f4ff;
+  border-radius: 16px;
+}
+
+.tela-simulada {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 12px 32px var(--sombra);
+  max-width: 700px;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: grabbing;
+}
+
+.instrucoes-topo {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+
+}
+ .container-botoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.container-botoes .botao-estranho {
+  all: unset;
+  justify-self: center;
+  width: 80px;
+  height: 80px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: wait;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-botoes .botao-estranho:hover {
+  transform: rotate(20deg) scale(1.2);
+}
+
+
+
+.botao-navegacao-disabled {
+    background-color: var(--cinza);
+    cursor: not-allowed;
+}

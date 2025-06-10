@@ -36,3 +36,24 @@ inputs.forEach(input => {
   });
 
 });
+
+
+
+    const btnVoltar = document.getElementById('btnVoltar');
+    const btnProximo = document.getElementById('btnProximo');
+
+    // Função para navegar para a página anterior (página 1)
+    btnVoltar.addEventListener('click', () =>{
+        window.location.href = 'index.html';
+    });
+    // Função para navegar para a próxima página (página 3)
+    btnProximo.addEventListener('click', function() {
+        window.location.href = 'page3.html';
+    });
+
+    // Opcional: desabilitar botões se não houver página anterior/próxima
+    // Por exemplo, se esta for a primeira página:
+    // btnVoltar.disabled = true;
+    // Ou se for a última página:
+    // btnProximo.disabled = true;
+
