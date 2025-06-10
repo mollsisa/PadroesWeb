@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo dos 7 Erros</title>
+    <link rel="stylesheet" href="../css/pages/puzzle.css">
+</head>
+<body>
+
+    <h1>Jogo dos 7 Erros</h1>
+    <div class="game-container">
+        <div class="image-container" id="image-original">
+            <img src="../assets/images/puzzle.png" alt="Imagem Original">
+        </div>
+        <div class="image-container" id="image-with-errors">
+            <img src="../assets/images/puzzleErr.png" alt="Imagem com Erros">
+        </div>
+    </div>
+
+    <div class="info-container">
+        <p>Erros encontrados: <span id="errors-found">0</span> de 7</p>
+    </div>
+
+    <div id="victory-message" class="hidden">
+        <h2>Parabéns! Você encontrou todos os 7 erros!</h2>
+    </div>
+
+    <script src="../js/pages/puzzle.js"></script>
+</body>
+</html>
