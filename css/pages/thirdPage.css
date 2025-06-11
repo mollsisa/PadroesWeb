@@ -1,13 +1,5 @@
 @import url('../styles.css');
 
-:root {
-  --fundo: #f9fafb;
-  --preto: #111827;
-  --cinza: #374151; 
-  --roxo: #6d28d9;
-  --sombra: rgba(0, 0, 0, 0.06);
-}
-
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -57,4 +49,38 @@ p {
 
 strong {
   color: var(--roxo);
+}
+
+@media (max-width: 1024px) {
+  main {
+    padding: 40px;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  p {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px 12px;
+  }
+
+  main {
+    padding: 24px 16px;
+    box-shadow: none;
+    border-radius: 6px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
 }
