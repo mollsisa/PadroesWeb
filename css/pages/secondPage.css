@@ -67,19 +67,45 @@ input {
   cursor: grabbing;
 }
 
+/* Todos os inputs habilitados vão parecer desabilitados */
+input:enabled {
+  background-color: #e0e0e0;
+  color: var(--cinza);
+  border: 1px solid #ccc;
+  cursor: not-allowed;
+}
+
+/* Todos os inputs desabilitados vão parecer habilitados */
+input:disabled {
+  background-color: var(--fundo);
+}
+
 .instrucoes-topo {
   position: absolute;
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
-
+  display: flex;
+  gap: 20px;
 }
  .container-botoes {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   margin-top: 24px;
+}
+
+ .container-data button {
+  all: unset;
+  width: 80px;
+  height: 80px;
+}
+
+
+.container-data button:hover {
+  cursor: not-allowed;
+  color: red;
 }
 
 .container-botoes .botao-estranho {
@@ -123,9 +149,4 @@ input {
   opacity: 1;
   pointer-events: auto;
   transform: translateX(0);
-}
-
-.container-data .botao-data:hover {
-  transform: none;
-  box-shadow: -5px 5px var(--roxo-escuro);
 }
