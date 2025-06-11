@@ -6,10 +6,11 @@ document.addEventListener('DOMContentLoaded', function() {
     btnVoltar.addEventListener('click', function() {
         redirectToPage('page2.html');
     });
-    btnProximo.disabled = true;
+    // btnProximo.disabled = true;
     // Função para navegar para a próxima página (página 4)
     btnProximo.addEventListener('click', function() {
-        redirectToPage('page4.html');
+        
+        redirectToPage('puzzle.html');
     });
 
     // Opcional: desabilitar botões se não houver página anterior/próxima

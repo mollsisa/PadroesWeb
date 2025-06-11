@@ -1,7 +1,8 @@
 const pageSequence = [
   'index.html',
   'page2.html',
-  'page3.html'
+  'page3.html',
+  'puzzle.html',
 ];
 
 /**

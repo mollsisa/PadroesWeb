@@ -1,3 +1,5 @@
+@import url('../styles.css');
+
 body {
     font-family: sans-serif;
     display: flex;
@@ -26,6 +28,12 @@ h1 {
 .image-container img {
     display: block;
     max-width: 100%;
+}
+
+.container-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .debug-area {
