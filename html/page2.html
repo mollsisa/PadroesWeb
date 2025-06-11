@@ -14,7 +14,9 @@
 
   <main class="moldura">
     <section class="instrucoes-topo">
+      <button id="btnVoltar">Voltar</button>
       <button id="btnDicas" aria-label="Dicas">Dicas</button>
+      <button id="btnProximo">Próximo</button>
     </section>
 
     <aside id="dicas">
@@ -26,11 +28,11 @@
       <h2>Formulário misterioso</h2>
       <form>
   
-        <input type="text" id="nome" placeholder="Escreva algo...">
+        <input type="text" id="nome" placeholder="Escreva seu nome">
 
-        <input type="email" id="email" placeholder="Talvez seu email?">
+        <input type="email" id="email" placeholder="Escreva sua idade">
         
-        <input id="mensagem" placeholder="O que você quer dizer?" rows="4">
+        <h3>Selecione sua data de nascimento nos botões abaixo</h2>
         
         <div class="container-data">
           <button type="button" id="seletor-dia" class="botao-data">Dia</button>
@@ -52,11 +54,7 @@
           </button>
         </div>
       </form>
-      <div class="container-botoes">
-            <button id="btnVoltar">Voltar</button>
-            <div></div> <!-- Espaço vazio para centralizar -->
-            <button id="btnProximo">Próximo</button>
-        </div>
+
     </section>
   </main>
   <script src="../js/pages/secondPage.js"></script>  
