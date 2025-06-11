@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // INTERRUPTOR: Mude para 'false' para desativar a visualização das áreas de erro.
   const DEBUG_MODE = false;
 
   const imageOriginalContainer = document.getElementById("image-original");
@@ -11,13 +10,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const totalErrors = 7;
 
   const errorAreas = [
-    { x: 68.4, y: 14.6, width: 9.0, height: 9.0, found: false }, // 1. passaro 1
-    { x: 63.5, y: 20.5, width: 8.0, height: 8.0, found: false }, // 2. passaro 2
-    { x: 50.0, y: 37.0, width: 12.0, height: 8.0, found: false }, // 3. nuvem
-    { x: 69.8, y: 54.0, width: 5.0, height: 5.0, found: false }, // 4. Janela da Casa (Formato)
-    { x: 28.0, y: 28.0, width: 14.0, height: 7.0, found: false }, // 5. Cor do Telhado
-    { x: 5.0, y: 45.5, width: 2.5, height: 3.5, found: false }, // 6. Flor Removida/Alterada
-    { x: 15.5, y: 35.0, width: 3.0, height: 8.0, found: false }, // 7. Tronco da Árvore (Detalhe)
+    { x: 85 - (9/2), y: 52 - (9/2), width: 9.0, height: 9.0, found: false }, // 1. peixe
+    { x: 13.5 - (8/2), y: 38 - (8/2), width: 7.0, height: 9.0, found: false }, // 2. relogio
+    { x: 16.5 - (12/2), y: 23.5 - (10/2), width: 12.0, height: 10.0, found: false }, // 3. carro
+    { x: 23.0 - (12/2), y: 74.5 - (12/2), width: 12.0, height: 12.0, found: false }, // 4. minhoca
+    { x: 39.1 - (4.5/2), y: 60 - (9/2), width: 4.0, height: 9.0, found: false }, // 5. cacto
+    { x: 87.7 - (3.5/2), y: 10.7 - (6/2), width: 3.5, height: 5.5, found: false }, // 6. medalha
+    { x: 94.2 - (4.5/2), y: 94.2 - (6.5/2), width: 4.5, height: 6.5, found: false }, // 7. biscoito
   ];
 
   imageOriginalContainer.addEventListener("click", (event) => {
@@ -118,6 +117,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Chama a função de inicialização do debug no final
   initializeDebug();
 });

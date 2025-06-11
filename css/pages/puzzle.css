@@ -10,8 +10,10 @@ h1 {
     color: #333;
 }
 
+
 .game-container {
     display: flex;
+    flex-direction: column;
     gap: 20px;
     margin-bottom: 20px;
 }
@@ -31,6 +33,22 @@ h1 {
     background-color: rgba(255, 0, 0, 0.4);  
     border: 1px dashed white;  
     pointer-events: none;
+}
+
+
+#restart-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #c0392b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#restart-button:hover {
+    background-color: #a93226;
 }
 
 .error-marker {
