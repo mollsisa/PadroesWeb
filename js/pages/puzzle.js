@@ -102,7 +102,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function showVictoryMessage() {
-    victoryMessage.classList.remove("hidden");
   }
 
   function initializeDebug() {
