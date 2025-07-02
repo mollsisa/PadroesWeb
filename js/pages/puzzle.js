@@ -124,11 +124,11 @@ document.addEventListener("DOMContentLoaded", () => {
 const btnVoltar = document.getElementById('btnVoltar');
     const btnProximo = document.getElementById('btnProximo');
 
-    // Função para navegar para a página anterior (página 1)
+    
     btnVoltar.addEventListener('click', () =>{
       redirectToPage('page3.html'); 
     });
-    // Função para navegar para a próxima página (página 3)
+    
     btnProximo.addEventListener('click', function() {
-      redirectToPage('page5.html'); 
+      redirectToPage('page7.html'); 
     });

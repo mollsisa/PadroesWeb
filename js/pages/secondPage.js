@@ -4,9 +4,9 @@ const btn = document.getElementById('btnDicas');
 const dicas = document.getElementById('dicas');
 const listaDicas = document.getElementById('listaDicas');
 const dicasArray = [
-  'Dica 1: A data de nascimento selecionada deve estar de acordo com a idade informada',
-  'Dica 2: Clique no segundo botão para resetar o seletor de data de nascimento',
-  'Dica 3: Clique no terceiro botão para enviar o formulário'
+  'Dica 1: O dia do nascimento para de mudar quando você seleciona o mês, e clique com o botão direito no ano para ir mais rápido',
+  'Dica 2: Para editar a data de nascimento clique duas vezes no botão errei',
+  'Dica 3: Quando a idade estiver correta de acordo com a data de nascimento, clique duas vezes no botão lembrar'
 ];
 
 // Seletor Data de Nascimento
