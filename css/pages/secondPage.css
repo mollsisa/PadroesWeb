@@ -25,11 +25,12 @@ main.moldura {
   width: 100%;
   max-width: 900px;
   margin: 40px auto;
-  padding: 100px 40px 60px;
-  box-sizing: border-box;
-  background: #fef9e7; 
-  border-radius: 16px;
-  border: 4px dashed #999; 
+  padding: 48px;
+  background: var(--fundo);
+  border-radius: 8px;
+  box-shadow: 0 12px 32px var(--sombra);
+  border: 1px solid #e5e7eb;
+  animation: fadeIn 0.4s ease-out;
 }
 
 .instrucoes {
@@ -65,15 +66,12 @@ main.moldura {
 }
 
 .tela-simulada {
-  background: #D6E6F2 ; 
-  border: 3px ridge #d0d0d0; 
+  background: #f8f8f8 ; 
+  border: 3px ridge #000; 
   font-family: 'Courier New', Courier, monospace;
-  text-shadow: 1px 1px 0 #fff;   
+  text-shadow: 1px 1px 0 #ffffff;   
   padding: 32px;
-  box-shadow:
-    inset 2px 2px 5px #ffffff,
-    inset -2px -2px 5px #b0b0b0,
-    0 0 10px #f0f0f0;
+  box-shadow: -10px 10px var(--roxo);
   width: 100%;
   max-width: 700px;
   margin: 40px auto;
@@ -121,7 +119,7 @@ input:disabled {
   margin-top: 16px;
 }
 
-.container-data button {
+.container-dataa button {
   all: unset;
   width: 80px;
   height: 80px;
@@ -164,6 +162,33 @@ input:disabled {
 
 .container-botoes .botao-estranho:hover {
   transform: rotate(20deg) scale(1.2);
+}
+
+.popup-desativado {
+  display: none;
+}
+
+.popup-cookie {
+  
+  z-index: 9999;
+  backdrop-filter: blur(10px);
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 48px;
+  background: var(--fundo);
+  border-radius: 8px;
+  box-shadow: 0 12px 32px var(--sombra);
+  border: 1px solid #e5e7eb;
+  animation: fadeIn 0.4s ease-out;
+}
+
+.popup-cookie p{
+  margin-bottom: 10px;
 }
 
 
@@ -210,8 +235,7 @@ input:disabled {
 
   .tela-simulada {
     padding: 20px 12px;
-    border-radius: 8px;
-    box-shadow: none;
+    box-shadow: -5px 5px var(--roxo);
   }
 
   .instrucoes-topo {

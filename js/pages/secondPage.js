@@ -117,22 +117,44 @@ botaoErrei.addEventListener('dblclick', () =>{
   resetarDatas();
 });
 
-//Enviar
-const botaoAcertei = document.getElementById('salvar');
-botaoAcertei.addEventListener('dblclick', () =>{
- if(
-  contadorAno == hoje.getFullYear &&
-  contadorMes == hoje.getMonth &&
-  contadorDia == hoje.getDay
- ){
-  mudarDia();
- }
- else{
-  botaoAcertei.textContent = hoje.getFullYear;
- }
+//Salvar
+const botaoSalvar = document.getElementById('salvar');
+botaoSalvar.addEventListener('click', () =>{
+  if (contadorAno === (2025 - inputIdade.value)){
+    redirectToPage('page3.html');
+  }
+    if (contadorAno === (2026 - inputIdade.value)){
+    redirectToPage('page3.html');
+  }
 });
-let contador = 0;
 
+//Bloquear Input
+inputs.forEach(input => {
+  input.disabled = false;
+  input.addEventListener('blur', () => {
+    if (input.value.trim().length > 0) {
+      input.disabled = true; 
+    }
+});
+});
+
+//Controle Popup
+const inputIdade = document.getElementById('idade');
+const popup = document.getElementById('cookie-popup');
+const botaoAceitarCookie = document.getElementById('aceitar-cookies');
+
+inputIdade.addEventListener('input', () => {
+  if (inputIdade.value.length >= 1) {
+    popup.className = ('popup-cookie');
+  }
+});
+botaoAceitarCookie.addEventListener('click', () => {
+  popup.className = ('popup-desativado');
+});
+
+
+//Dicas
+let contador = 0;
 btn.addEventListener('click', () => {
   if (contador === 0) {
     dicas.classList.add('show'); 
@@ -149,16 +171,7 @@ btn.addEventListener('click', () => {
   }
 });
 
-inputs.forEach(input => {
-  input.disabled = false;
-  input.addEventListener('blur', () => {
-    if (input.value.trim().length > 0) {
-      input.disabled = true; 
-    }
-  });
-
-});
-
+//Controle Navegação
     const btnVoltar = document.getElementById('btnVoltar');
     const btnProximo = document.getElementById('btnProximo');
 
@@ -170,10 +183,3 @@ inputs.forEach(input => {
     btnProximo.addEventListener('click', function() {
       redirectToPage('page3.html'); 
     });
-
-    // Opcional: desabilitar botões se não houver página anterior/próxima
-    // Por exemplo, se esta for a primeira página:
-    // btnVoltar.disabled = true;
-    // Ou se for a última página:
-    // btnProximo.disabled = true;
-

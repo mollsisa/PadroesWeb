@@ -8,13 +8,10 @@
       <link rel="stylesheet" href="../css/pages/secondPage.css">
 </head>
 <body>
-<header>
+  <main class="moldura">
     <h1>Simulação de um site com baixa usabilidade</h1>
     <p>Tente preencher e enviar o formulário abaixo. Parece simples... ou não?</p>
-  </header>
-
-  <main class="moldura">
-
+    
     <aside id="dicas">
       <h2>Dicas</h2>
       <ul id="listaDicas"></ul>
@@ -26,7 +23,7 @@
   
         <input type="text" id="nome" placeholder="Escreva seu nome">
 
-        <input type="email" id="email" placeholder="Escreva sua idade">
+        <input type="email" id="idade" placeholder="Escreva sua idade">
         
         <h3>Selecione sua data de nascimento nos botões abaixo</h2>
         
@@ -38,19 +35,18 @@
 
         <div class="container-botoes">
           <button type="submit" id="enviar" class="botao-estranho" title="Acertei">
-            💾
+            🎯
           </button>
 
           <button type="button" id="editar" class="botao-estranho" title="Errei">
-                          🖉
+            🚽
           </button>
 
           <button type="button" id="salvar" class="botao-estranho" title="Salvar">
-                        🛈
+           🧠
           </button>
         </div>
       </form>
-
     </section>
     
     <section class="instrucoes">
@@ -58,6 +54,13 @@
       <button id="btnDicas" aria-label="Dicas">Dicas</button>
       <button id="btnProximo">Próximo</button>
     </section>
+
+    <div id="cookie-popup" role="dialog" aria-modal="true" aria-labelledby="cookie-title" class="popup-desativado">
+      <h2 id="cookie-title"><strong>Gostamos de Cookies</strong></h2>
+      <p>Este site acredita que cookies para melhorar sua experiência. Ao concordar, você concorda que cookies são bons.</p>
+      <button id="aceitar-cookies">Aceitar</button>
+    </div>
+    
   </main>
   <script src="../js/pages/secondPage.js"></script>  
   <script src="../js/utils/navigations.js"></script>  
