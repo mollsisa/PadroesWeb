@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Análise de Desempenho</title>
+  <link rel="stylesheet" href="../css/pages/sixthPage.css" />
+</head>
+<body>
+  <main class="content">
+    <header>
+      <h1>Seu Desempenho</h1>
+      <p>Confira a seguir uma análise completa da sua performance no jogo.</p>
+    </header>
+
+    <section class="grafico" aria-labelledby="graficoDesempenho">
+      <h2 id="graficoDesempenho" class="subtitulo">Resumo Visual</h2>
+      <canvas id="graficoDesempenhoCanvas" width="400" height="300"></canvas>
+    </section>
+
+    <section class="analise-textual" aria-labelledby="analiseTextual">
+      <h2 id="analiseTextual" class="subtitulo">Análise Textual</h2>
+      <div id="feedbackTexto"></div>
+    </section>
+
+    <nav class="botoes">
+      <button id="btnVoltar">Voltar</button>
+      <button id="btnComeco">Próximo</button>
+    </nav>
+
+    <footer>
+      <p>&copy; 2025 - Todos os direitos reservados.</p>
+    </footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../js/components/button.js"></script>
+  <script src="../js/utils/navigations.js"></script>
+  <script src="../js/pages/page6.js"></script>
+</body>
+</html>

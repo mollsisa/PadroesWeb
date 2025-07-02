@@ -1,0 +1,66 @@
+@import url('../styles.css');
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--fundo);
+  color: var(--preto);
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.content {
+  max-width: 960px;
+  width: 100%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 12px 32px var(--sombra);
+  padding: 48px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+header p {
+  color: var(--cinza);
+  margin-bottom: 32px;
+}
+
+.subtitulo {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--roxo);
+}
+
+.grafico {
+  margin-bottom: 40px;
+}
+
+.analise-textual {
+  text-align: left;
+}
+
+#feedbackTexto p {
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+  color: var(--cinza);
+}
+
+button {
+  margin-bottom: 5%;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 32px 16px;
+  }
+
+  canvas {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
