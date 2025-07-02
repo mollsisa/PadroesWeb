@@ -13,9 +13,4 @@ document.addEventListener('DOMContentLoaded', function() {
         redirectToPage('puzzle.html');
     });
 
-    // Opcional: desabilitar botões se não houver página anterior/próxima
-    // Por exemplo, se esta for a primeira página:
-    // btnVoltar.disabled = true;
-    // Ou se for a última página:
-    // btnProximo.disabled = true;
 });

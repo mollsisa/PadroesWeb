@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const btnComeco = document.getElementById('btnComeco');
 
     btnVoltar.addEventListener('click', function() {
-        redirectToPage('page3.html');
+        redirectToPage('page6.html');
     });
     btnComeco.addEventListener('click', function() {
         redirectToPage('index.html');

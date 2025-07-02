@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ranking de Usuários</title>
+  <link rel="stylesheet" href="../css/pages/fifthPage.css" />
+</head>
+<body>
+  <main class="content">
+    <header>
+      <h1>Ranking de Desempenho</h1>
+      <p>Veja como os usuários se saíram no jogo dos sete erros.</p>
+    </header>
+
+    <section class="secao" aria-labelledby="tabela-ranking">
+      <h2 id="tabela-ranking" class="subtitulo">Classificação</h2>
+      <div class="tabela-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Posição</th>
+              <th>Nome</th>
+              <th>Tempo (s)</th>
+              <th>Erros</th>
+              <th>Dicas usadas</th>
+              <th>Pontuação</th>
+            </tr>
+          </thead>
+          <tbody id="ranking-body">
+            <!-- JS vai preencher -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <nav class="botoes">
+        <button id="btnVoltar">Voltar</button>
+        <button id="btnComeco">Próximo</button>
+      </nav>
+
+    <footer>
+      <p>&copy; 2025 - Todos os direitos reservados.</p>
+    </footer>
+  </main>
+  <script src="../js/components/button.js"></script>
+  <script src="../js/utils/navigations.js"></script>
+  <script src="../js/pages/page5.js"></script>
+</body>
+</html>
