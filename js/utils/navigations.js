@@ -3,6 +3,8 @@ const pageSequence = [
   'page2.html',
   'page3.html',
   'puzzle.html',
+  'page5.html',
+  'page6.html',
   'page7.html',
 ];
 
