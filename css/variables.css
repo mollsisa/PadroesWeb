@@ -6,3 +6,7 @@
   --fundo: #ffffff;
   --sombra: rgba(0, 0, 0, 0.1);
 }
+
+strong {
+  color: var(--roxo);
+}
