@@ -130,5 +130,5 @@ const btnVoltar = document.getElementById('btnVoltar');
     });
     
     btnProximo.addEventListener('click', function() {
-      redirectToPage('page7.html'); 
+      redirectToPage('page5.html'); 
     });
